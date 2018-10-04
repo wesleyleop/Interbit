@@ -1,0 +1,42 @@
+{
+  "name": "interbit-platform",
+  "private": true,
+  "dependencies": {
+    "cross-env": "^5.1.4",
+    "lerna": "^2.10.2",
+    "tar": "^4.4.2"
+  },
+  "scripts": {
+    "build": "cross-env-shell lerna run --scope $APP_NAME build",
+    "build:modules": "lerna run --scope interbit-* build",
+    "postinstall": "lerna bootstrap --hoist --parallel && npm run build:modules",
+    "heroku-postbuild": "npm run build",
+    "start": "cross-env-shell lerna run --scope $APP_NAME serve --stream",
+    "test": "npm run lint && lerna run --parallel test -- -- --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "release": "npm run build:modules && lerna publish --force-publish=* --exact --conventional-commits",
+    "coverage": "npm run test && lerna run --scope utils coverage"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.7.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-config-prettier-standard": "^1.0.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-prettier": "^2.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "prettier": "^1.6.1"
+  },
+  "engines": {
+    "npm": "5.6.0",
+    "node": "9.3.0"
+  }
+}

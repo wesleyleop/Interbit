@@ -1,0 +1,596 @@
+{
+  "peers": [
+    "ib-dev----master.herokuapp.com:443",
+    "ib-dev-web-auth.herokuapp.com:443"
+  ],
+  "apps": {
+    "account": {
+      "appChain": "accountsPublic",
+      "buildLocation": "../../app-account/build",
+      "browserChains": [
+        "accountsPublic"
+      ]
+    },
+    "template": {
+      "appChain": "templatePublic",
+      "buildLocation": "../../interbit-template/build",
+      "browserChains": [
+        "templatePublic"
+      ]
+    }
+  },
+  "covenants": {
+    "app-account-my-account": {
+      "hash": "d1f7b3bbb750648659fe8a9f6ef34384d869ee9e3be2f3c131624fe51102a513",
+      "filename": "covenants/d1f7b3bbb750648659fe8a9f6ef34384d869ee9e3be2f3c131624fe51102a513.tgz"
+    },
+    "app-account-public": {
+      "hash": "70e55fc52184f26912df7323846b50eab9083472264ce9ce1e5b9b5630709761",
+      "filename": "covenants/70e55fc52184f26912df7323846b50eab9083472264ce9ce1e5b9b5630709761.tgz"
+    },
+    "app-account-control": {
+      "hash": "a27ee4f97ca2250d23674827f97f4c05841e676be0e63f5b045de236aec113e7",
+      "filename": "covenants/a27ee4f97ca2250d23674827f97f4c05841e676be0e63f5b045de236aec113e7.tgz"
+    },
+    "app-account-github-kyc": {
+      "hash": "73ecaffed952f266276c29074fbfae1ebc7b925477b885902d9d9f8c85cf8bf8",
+      "filename": "covenants/73ecaffed952f266276c29074fbfae1ebc7b925477b885902d9d9f8c85cf8bf8.tgz"
+    },
+    "template-public": {
+      "hash": "4327a99f83f4c1a48b2ecb82fff4f829dfe1fe84c0babd9c8ae4b9253c6dd245",
+      "filename": "covenants/4327a99f83f4c1a48b2ecb82fff4f829dfe1fe84c0babd9c8ae4b9253c6dd245.tgz"
+    },
+    "template-control": {
+      "hash": "4a90ef10c64bf51114640c6ef1e58a780b3fdb7f8457bf83fd86c3f741d3a0c7",
+      "filename": "covenants/4a90ef10c64bf51114640c6ef1e58a780b3fdb7f8457bf83fd86c3f741d3a0c7.tgz"
+    },
+    "template-private": {
+      "hash": "019cb3ff270de9c86a1724d43980c7580b9b4030adea59b389e39967e7dc31f8",
+      "filename": "covenants/019cb3ff270de9c86a1724d43980c7580b9b4030adea59b389e39967e7dc31f8.tgz"
+    },
+    "interbitRoot": {
+      "hash": "ea78da93b297f8cc0f352af934e29736296585fb1e9b61d3266dd7a8518f7b82",
+      "filename": "covenants/ea78da93b297f8cc0f352af934e29736296585fb1e9b61d3266dd7a8518f7b82.tgz"
+    }
+  },
+  "chains": {
+    "accountsControl": "79045db6c953c57b67bb74c3bda4f7c7e46c23309572066e01854c48ab6bb77b",
+    "accountsPublic": "7bb53e1e7740707bb37feccb65a9de237ade84ae60329590a25d6d545b99d9cd",
+    "accountsGithubAuth": "8626c5cebb01fa511fd56dcee743f215a00c9475517cef7777bb65e1ecb4a559",
+    "templatePublic": "b39b9fd2e4b3cb91686d060056b55dd6d95b095763799b47906c03ef7771f1a2",
+    "templateControl": "ef28bf3cbb0c6b135b52176ec4b108e2b80bfe6e7ee2c0135e06f45cc9dec1ac",
+    "interbitRoot": "fb4f09f3d3abdf2c98ae8dcb41dcf6d070fd0dd77f0cd0119b1e2daa09243d1c"
+  },
+  "genesisBlocks": {
+    "accountsControl": {
+      "content": {
+        "previousHash": "genesis",
+        "stateHash": "430a06932fcb915576ef9452262bd16c242c1257f39ee2df644b7cf485ad0327",
+        "actions": [],
+        "errors": {},
+        "redispatches": {},
+        "height": 0,
+        "timestamp": 1533851731882,
+        "seed": 0.9076968428983985,
+        "configChanged": true,
+        "timeToCreateBlock": 0,
+        "state": {
+          "interbit": {
+            "config": {
+              "consensus": "PoA",
+              "providing": [],
+              "consuming": [],
+              "acl": {
+                "actionPermissions": {
+                  "*": [
+                    "root"
+                  ]
+                },
+                "roles": {
+                  "root": [
+                    "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q=",
+                    "xk0EWxXMKAECAI+weRG4JyZaoxsFX8TQDQtQXVYk2gabygm7as4+f+0+py+FErkKIbz8m0r6A+UrmKYaD/fksj2DGRKn/7Ohv7EAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcwoBgsJBwgDAgkQmTQy2zEs+JUEFQgKAgMWAgEC\nGQECGwMCHgEAAOr4Af4sl2I7QkkJvdTSMPeUJNKtj45ArxBHmbLjpYuVTpnM\nLr2DJmlNFiYgZlZkExYEI5Gm3CxyHJeq/elBSe5V613Ozk0EWxXMKAEB/3LI\nfXPVHtBtHKVE+Zveb29bmDK/l6t0w+UYIw0qpJekjaFrrLtHm5ML9BwJCBei\nea1VCL/SGTf478lZZ7My+K0AEQEAAcJfBBgBCAATBQJbFcwoCRCZNDLbMSz4\nlQIbDAAA7U8B/iloThYXFYC7IU45OqWcr5uT72ZlSaUmxKcktcjA9DRH4GVg\nZysmi4/kjUvb+qoA9GIoc7MfXxw32zkNL8YjW9c="
+                  ]
+                }
+              },
+              "blockMaster": "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+            },
+            "configChanges": {}
+          }
+        }
+      },
+      "contentHash": "a93775322da2175a6eedb4a00d4163afdeb270a63355584f9c90e123605e3898",
+      "signatures": {
+        "GENESIS": "GENESIS"
+      },
+      "signaturesHash": "5802612e380de8f088c9c9ab28412e853d75d86eed65d8415bca52daac7681ce",
+      "blockHash": "79045db6c953c57b67bb74c3bda4f7c7e46c23309572066e01854c48ab6bb77b"
+    },
+    "accountsPublic": {
+      "content": {
+        "previousHash": "genesis",
+        "stateHash": "57bc1b5c2de7f57968c9f993e50e51bad3f81759f4f03b7c471e044c1207be3b",
+        "actions": [],
+        "errors": {},
+        "redispatches": {},
+        "height": 0,
+        "timestamp": 1533851731883,
+        "seed": 0.3796188923810617,
+        "configChanged": true,
+        "timeToCreateBlock": 0,
+        "state": {
+          "interbit": {
+            "config": {
+              "consensus": "PoA",
+              "providing": [],
+              "consuming": [],
+              "acl": {
+                "actionPermissions": {
+                  "*": [
+                    "root"
+                  ]
+                },
+                "roles": {
+                  "root": [
+                    "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+                  ]
+                }
+              },
+              "blockMaster": "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+            },
+            "configChanges": {}
+          }
+        }
+      },
+      "contentHash": "30078c5e46dce12176d8e4f150df74dd2c46c14bf767a3e1508181ed6daa07dc",
+      "signatures": {
+        "GENESIS": "GENESIS"
+      },
+      "signaturesHash": "5802612e380de8f088c9c9ab28412e853d75d86eed65d8415bca52daac7681ce",
+      "blockHash": "7bb53e1e7740707bb37feccb65a9de237ade84ae60329590a25d6d545b99d9cd"
+    },
+    "accountsGithubAuth": {
+      "content": {
+        "previousHash": "genesis",
+        "stateHash": "430a06932fcb915576ef9452262bd16c242c1257f39ee2df644b7cf485ad0327",
+        "actions": [],
+        "errors": {},
+        "redispatches": {},
+        "height": 0,
+        "timestamp": 1533851731885,
+        "seed": 0.8650081594773871,
+        "configChanged": true,
+        "timeToCreateBlock": 0,
+        "state": {
+          "interbit": {
+            "config": {
+              "consensus": "PoA",
+              "providing": [],
+              "consuming": [],
+              "acl": {
+                "actionPermissions": {
+                  "*": [
+                    "root"
+                  ]
+                },
+                "roles": {
+                  "root": [
+                    "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q=",
+                    "xk0EWxXMKAECAI+weRG4JyZaoxsFX8TQDQtQXVYk2gabygm7as4+f+0+py+FErkKIbz8m0r6A+UrmKYaD/fksj2DGRKn/7Ohv7EAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcwoBgsJBwgDAgkQmTQy2zEs+JUEFQgKAgMWAgEC\nGQECGwMCHgEAAOr4Af4sl2I7QkkJvdTSMPeUJNKtj45ArxBHmbLjpYuVTpnM\nLr2DJmlNFiYgZlZkExYEI5Gm3CxyHJeq/elBSe5V613Ozk0EWxXMKAEB/3LI\nfXPVHtBtHKVE+Zveb29bmDK/l6t0w+UYIw0qpJekjaFrrLtHm5ML9BwJCBei\nea1VCL/SGTf478lZZ7My+K0AEQEAAcJfBBgBCAATBQJbFcwoCRCZNDLbMSz4\nlQIbDAAA7U8B/iloThYXFYC7IU45OqWcr5uT72ZlSaUmxKcktcjA9DRH4GVg\nZysmi4/kjUvb+qoA9GIoc7MfXxw32zkNL8YjW9c="
+                  ]
+                }
+              },
+              "blockMaster": "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+            },
+            "configChanges": {}
+          }
+        }
+      },
+      "contentHash": "09a826340b1519a3ef6934fa0d8e8d92c65a5aca9126752ecb852b85d1f7c6f3",
+      "signatures": {
+        "GENESIS": "GENESIS"
+      },
+      "signaturesHash": "5802612e380de8f088c9c9ab28412e853d75d86eed65d8415bca52daac7681ce",
+      "blockHash": "8626c5cebb01fa511fd56dcee743f215a00c9475517cef7777bb65e1ecb4a559"
+    },
+    "templatePublic": {
+      "content": {
+        "previousHash": "genesis",
+        "stateHash": "57bc1b5c2de7f57968c9f993e50e51bad3f81759f4f03b7c471e044c1207be3b",
+        "actions": [],
+        "errors": {},
+        "redispatches": {},
+        "height": 0,
+        "timestamp": 1533851731886,
+        "seed": 0.1440573496786357,
+        "configChanged": true,
+        "timeToCreateBlock": 0,
+        "state": {
+          "interbit": {
+            "config": {
+              "consensus": "PoA",
+              "providing": [],
+              "consuming": [],
+              "acl": {
+                "actionPermissions": {
+                  "*": [
+                    "root"
+                  ]
+                },
+                "roles": {
+                  "root": [
+                    "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+                  ]
+                }
+              },
+              "blockMaster": "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+            },
+            "configChanges": {}
+          }
+        }
+      },
+      "contentHash": "d507977149b32911ab0114793e6771a79055cac2fc4ef6ce14d2f1f71bf59122",
+      "signatures": {
+        "GENESIS": "GENESIS"
+      },
+      "signaturesHash": "5802612e380de8f088c9c9ab28412e853d75d86eed65d8415bca52daac7681ce",
+      "blockHash": "b39b9fd2e4b3cb91686d060056b55dd6d95b095763799b47906c03ef7771f1a2"
+    },
+    "templateControl": {
+      "content": {
+        "previousHash": "genesis",
+        "stateHash": "57bc1b5c2de7f57968c9f993e50e51bad3f81759f4f03b7c471e044c1207be3b",
+        "actions": [],
+        "errors": {},
+        "redispatches": {},
+        "height": 0,
+        "timestamp": 1533851731887,
+        "seed": 0.21540853907877433,
+        "configChanged": true,
+        "timeToCreateBlock": 0,
+        "state": {
+          "interbit": {
+            "config": {
+              "consensus": "PoA",
+              "providing": [],
+              "consuming": [],
+              "acl": {
+                "actionPermissions": {
+                  "*": [
+                    "root"
+                  ]
+                },
+                "roles": {
+                  "root": [
+                    "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+                  ]
+                }
+              },
+              "blockMaster": "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+            },
+            "configChanges": {}
+          }
+        }
+      },
+      "contentHash": "4192bad1e79f3a7d3d6b0c207fe1fff1fda57c67b0382b220023aed8ee342631",
+      "signatures": {
+        "GENESIS": "GENESIS"
+      },
+      "signaturesHash": "5802612e380de8f088c9c9ab28412e853d75d86eed65d8415bca52daac7681ce",
+      "blockHash": "ef28bf3cbb0c6b135b52176ec4b108e2b80bfe6e7ee2c0135e06f45cc9dec1ac"
+    },
+    "interbitRoot": {
+      "content": {
+        "previousHash": "genesis",
+        "stateHash": "430a06932fcb915576ef9452262bd16c242c1257f39ee2df644b7cf485ad0327",
+        "actions": [],
+        "errors": {},
+        "redispatches": {},
+        "height": 0,
+        "timestamp": 1533851731889,
+        "seed": 0.7000438987271005,
+        "configChanged": true,
+        "timeToCreateBlock": 1,
+        "state": {
+          "interbit": {
+            "config": {
+              "consensus": "PoA",
+              "providing": [],
+              "consuming": [],
+              "acl": {
+                "actionPermissions": {
+                  "*": [
+                    "root"
+                  ]
+                },
+                "roles": {
+                  "root": [
+                    "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q=",
+                    "xk0EWxXMKAECAI+weRG4JyZaoxsFX8TQDQtQXVYk2gabygm7as4+f+0+py+FErkKIbz8m0r6A+UrmKYaD/fksj2DGRKn/7Ohv7EAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcwoBgsJBwgDAgkQmTQy2zEs+JUEFQgKAgMWAgEC\nGQECGwMCHgEAAOr4Af4sl2I7QkkJvdTSMPeUJNKtj45ArxBHmbLjpYuVTpnM\nLr2DJmlNFiYgZlZkExYEI5Gm3CxyHJeq/elBSe5V613Ozk0EWxXMKAEB/3LI\nfXPVHtBtHKVE+Zveb29bmDK/l6t0w+UYIw0qpJekjaFrrLtHm5ML9BwJCBei\nea1VCL/SGTf478lZZ7My+K0AEQEAAcJfBBgBCAATBQJbFcwoCRCZNDLbMSz4\nlQIbDAAA7U8B/iloThYXFYC7IU45OqWcr5uT72ZlSaUmxKcktcjA9DRH4GVg\nZysmi4/kjUvb+qoA9GIoc7MfXxw32zkNL8YjW9c="
+                  ]
+                }
+              },
+              "blockMaster": "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+            },
+            "configChanges": {}
+          }
+        }
+      },
+      "contentHash": "3cc4a35b27b95346c67925767050c586d96cac2c10021e2041295ab6fdf01241",
+      "signatures": {
+        "GENESIS": "GENESIS"
+      },
+      "signaturesHash": "5802612e380de8f088c9c9ab28412e853d75d86eed65d8415bca52daac7681ce",
+      "blockHash": "fb4f09f3d3abdf2c98ae8dcb41dcf6d070fd0dd77f0cd0119b1e2daa09243d1c"
+    }
+  },
+  "manifest": {
+    "interbitRoot": {
+      "chainId": "fb4f09f3d3abdf2c98ae8dcb41dcf6d070fd0dd77f0cd0119b1e2daa09243d1c",
+      "validators": [
+        "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q=",
+        "xk0EWxXMKAECAI+weRG4JyZaoxsFX8TQDQtQXVYk2gabygm7as4+f+0+py+FErkKIbz8m0r6A+UrmKYaD/fksj2DGRKn/7Ohv7EAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcwoBgsJBwgDAgkQmTQy2zEs+JUEFQgKAgMWAgEC\nGQECGwMCHgEAAOr4Af4sl2I7QkkJvdTSMPeUJNKtj45ArxBHmbLjpYuVTpnM\nLr2DJmlNFiYgZlZkExYEI5Gm3CxyHJeq/elBSe5V613Ozk0EWxXMKAEB/3LI\nfXPVHtBtHKVE+Zveb29bmDK/l6t0w+UYIw0qpJekjaFrrLtHm5ML9BwJCBei\nea1VCL/SGTf478lZZ7My+K0AEQEAAcJfBBgBCAATBQJbFcwoCRCZNDLbMSz4\nlQIbDAAA7U8B/iloThYXFYC7IU45OqWcr5uT72ZlSaUmxKcktcjA9DRH4GVg\nZysmi4/kjUvb+qoA9GIoc7MfXxw32zkNL8YjW9c=",
+        "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+      ],
+      "covenant": "interbitRoot",
+      "covenants": {
+        "interbitRoot": "interbitRoot",
+        "templateControl": "template-control"
+      },
+      "joins": {
+        "consume": [],
+        "provide": [],
+        "receiveActionFrom": [],
+        "sendActionTo": [
+          {
+            "alias": "accountsControl"
+          },
+          {
+            "alias": "accountsPublic"
+          },
+          {
+            "alias": "accountsGithubAuth"
+          },
+          {
+            "alias": "templatePublic"
+          },
+          {
+            "alias": "templateControl"
+          }
+        ]
+      },
+      "chains": {
+        "accountsControl": {
+          "chainId": "79045db6c953c57b67bb74c3bda4f7c7e46c23309572066e01854c48ab6bb77b",
+          "validators": [
+            "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q=",
+            "xk0EWxXMKAECAI+weRG4JyZaoxsFX8TQDQtQXVYk2gabygm7as4+f+0+py+FErkKIbz8m0r6A+UrmKYaD/fksj2DGRKn/7Ohv7EAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcwoBgsJBwgDAgkQmTQy2zEs+JUEFQgKAgMWAgEC\nGQECGwMCHgEAAOr4Af4sl2I7QkkJvdTSMPeUJNKtj45ArxBHmbLjpYuVTpnM\nLr2DJmlNFiYgZlZkExYEI5Gm3CxyHJeq/elBSe5V613Ozk0EWxXMKAEB/3LI\nfXPVHtBtHKVE+Zveb29bmDK/l6t0w+UYIw0qpJekjaFrrLtHm5ML9BwJCBei\nea1VCL/SGTf478lZZ7My+K0AEQEAAcJfBBgBCAATBQJbFcwoCRCZNDLbMSz4\nlQIbDAAA7U8B/iloThYXFYC7IU45OqWcr5uT72ZlSaUmxKcktcjA9DRH4GVg\nZysmi4/kjUvb+qoA9GIoc7MfXxw32zkNL8YjW9c=",
+            "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+          ],
+          "covenant": "app-account-control",
+          "covenants": {
+            "accountsControl": "app-account-control"
+          },
+          "joins": {
+            "provide": [
+              {
+                "alias": "accountsPublic",
+                "path": [
+                  "privateChainHosting",
+                  "shared"
+                ],
+                "joinName": "HOSTING_SPONSOR"
+              },
+              {
+                "alias": "accountsGithubAuth",
+                "path": [
+                  "interbit",
+                  "chainId"
+                ],
+                "joinName": "CONTROL_CHAIN_ID"
+              }
+            ],
+            "receiveActionFrom": [
+              {
+                "alias": "accountsGithubAuth",
+                "authorizedActions": [
+                  "app-account-control/ADD_KEY_TO_SPONSORED_CHAIN"
+                ]
+              },
+              {
+                "alias": "interbitRoot",
+                "authorizedActions": [
+                  "@@MANIFEST/SET_MANIFEST"
+                ]
+              }
+            ],
+            "consume": [],
+            "sendActionTo": []
+          },
+          "chains": {},
+          "hash": "273a7e81be07052c8f756cf114e24836faecc1a5"
+        },
+        "accountsPublic": {
+          "chainId": "7bb53e1e7740707bb37feccb65a9de237ade84ae60329590a25d6d545b99d9cd",
+          "validators": [
+            "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q=",
+            "xk0EWxXMKAECAI+weRG4JyZaoxsFX8TQDQtQXVYk2gabygm7as4+f+0+py+FErkKIbz8m0r6A+UrmKYaD/fksj2DGRKn/7Ohv7EAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcwoBgsJBwgDAgkQmTQy2zEs+JUEFQgKAgMWAgEC\nGQECGwMCHgEAAOr4Af4sl2I7QkkJvdTSMPeUJNKtj45ArxBHmbLjpYuVTpnM\nLr2DJmlNFiYgZlZkExYEI5Gm3CxyHJeq/elBSe5V613Ozk0EWxXMKAEB/3LI\nfXPVHtBtHKVE+Zveb29bmDK/l6t0w+UYIw0qpJekjaFrrLtHm5ML9BwJCBei\nea1VCL/SGTf478lZZ7My+K0AEQEAAcJfBBgBCAATBQJbFcwoCRCZNDLbMSz4\nlQIbDAAA7U8B/iloThYXFYC7IU45OqWcr5uT72ZlSaUmxKcktcjA9DRH4GVg\nZysmi4/kjUvb+qoA9GIoc7MfXxw32zkNL8YjW9c=",
+            "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+          ],
+          "covenant": "app-account-public",
+          "covenants": {
+            "accountsPublic": "app-account-public"
+          },
+          "joins": {
+            "consume": [
+              {
+                "alias": "accountsGithubAuth",
+                "path": [
+                  "identityProviders",
+                  "oauth",
+                  "gitHub"
+                ],
+                "joinName": "OAUTH-CONFIG-GITHUB"
+              },
+              {
+                "alias": "accountsControl",
+                "path": [
+                  "privateChainHosting"
+                ],
+                "joinName": "HOSTING_SPONSOR"
+              }
+            ],
+            "provide": [],
+            "receiveActionFrom": [
+              {
+                "alias": "interbitRoot",
+                "authorizedActions": [
+                  "@@MANIFEST/SET_MANIFEST"
+                ]
+              }
+            ],
+            "sendActionTo": []
+          },
+          "chains": {},
+          "hash": "2b499fe5a17403b3c8002ea4673dfc05fa95e425"
+        },
+        "accountsGithubAuth": {
+          "chainId": "8626c5cebb01fa511fd56dcee743f215a00c9475517cef7777bb65e1ecb4a559",
+          "validators": [
+            "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q=",
+            "xk0EWxXMKAECAI+weRG4JyZaoxsFX8TQDQtQXVYk2gabygm7as4+f+0+py+FErkKIbz8m0r6A+UrmKYaD/fksj2DGRKn/7Ohv7EAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcwoBgsJBwgDAgkQmTQy2zEs+JUEFQgKAgMWAgEC\nGQECGwMCHgEAAOr4Af4sl2I7QkkJvdTSMPeUJNKtj45ArxBHmbLjpYuVTpnM\nLr2DJmlNFiYgZlZkExYEI5Gm3CxyHJeq/elBSe5V613Ozk0EWxXMKAEB/3LI\nfXPVHtBtHKVE+Zveb29bmDK/l6t0w+UYIw0qpJekjaFrrLtHm5ML9BwJCBei\nea1VCL/SGTf478lZZ7My+K0AEQEAAcJfBBgBCAATBQJbFcwoCRCZNDLbMSz4\nlQIbDAAA7U8B/iloThYXFYC7IU45OqWcr5uT72ZlSaUmxKcktcjA9DRH4GVg\nZysmi4/kjUvb+qoA9GIoc7MfXxw32zkNL8YjW9c=",
+            "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+          ],
+          "covenant": "app-account-github-kyc",
+          "covenants": {
+            "accountsGithubAuth": "app-account-github-kyc"
+          },
+          "joins": {
+            "consume": [
+              {
+                "alias": "accountsControl",
+                "path": [
+                  "controlChainId"
+                ],
+                "joinName": "CONTROL_CHAIN_ID"
+              }
+            ],
+            "provide": [
+              {
+                "alias": "accountsPublic",
+                "path": [
+                  "oAuth",
+                  "shared"
+                ],
+                "joinName": "OAUTH-CONFIG-GITHUB"
+              }
+            ],
+            "sendActionTo": [
+              {
+                "alias": "accountsControl"
+              }
+            ],
+            "receiveActionFrom": [
+              {
+                "alias": "interbitRoot",
+                "authorizedActions": [
+                  "@@MANIFEST/SET_MANIFEST"
+                ]
+              }
+            ]
+          },
+          "chains": {},
+          "hash": "673079a0b3861aa06c4e1033fc89db53009d1d57"
+        },
+        "templatePublic": {
+          "chainId": "b39b9fd2e4b3cb91686d060056b55dd6d95b095763799b47906c03ef7771f1a2",
+          "validators": [
+            "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q=",
+            "xk0EWxXMKAECAI+weRG4JyZaoxsFX8TQDQtQXVYk2gabygm7as4+f+0+py+FErkKIbz8m0r6A+UrmKYaD/fksj2DGRKn/7Ohv7EAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcwoBgsJBwgDAgkQmTQy2zEs+JUEFQgKAgMWAgEC\nGQECGwMCHgEAAOr4Af4sl2I7QkkJvdTSMPeUJNKtj45ArxBHmbLjpYuVTpnM\nLr2DJmlNFiYgZlZkExYEI5Gm3CxyHJeq/elBSe5V613Ozk0EWxXMKAEB/3LI\nfXPVHtBtHKVE+Zveb29bmDK/l6t0w+UYIw0qpJekjaFrrLtHm5ML9BwJCBei\nea1VCL/SGTf478lZZ7My+K0AEQEAAcJfBBgBCAATBQJbFcwoCRCZNDLbMSz4\nlQIbDAAA7U8B/iloThYXFYC7IU45OqWcr5uT72ZlSaUmxKcktcjA9DRH4GVg\nZysmi4/kjUvb+qoA9GIoc7MfXxw32zkNL8YjW9c=",
+            "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+          ],
+          "covenant": "template-public",
+          "covenants": {
+            "templatePublic": "template-public"
+          },
+          "joins": {
+            "consume": [
+              {
+                "alias": "templateControl",
+                "path": [
+                  "interbitServices"
+                ],
+                "joinName": "INTERBIT_SERVICES"
+              },
+              {
+                "alias": "templateControl",
+                "path": [
+                  "privateChainHosting"
+                ],
+                "joinName": "HOSTING_SPONSOR"
+              }
+            ],
+            "provide": [],
+            "receiveActionFrom": [
+              {
+                "alias": "interbitRoot",
+                "authorizedActions": [
+                  "@@MANIFEST/SET_MANIFEST"
+                ]
+              }
+            ],
+            "sendActionTo": []
+          },
+          "chains": {},
+          "hash": "6f6488b7a3f687d2f75025964840b8ea087e71e9"
+        },
+        "templateControl": {
+          "chainId": "ef28bf3cbb0c6b135b52176ec4b108e2b80bfe6e7ee2c0135e06f45cc9dec1ac",
+          "validators": [
+            "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q=",
+            "xk0EWxXMKAECAI+weRG4JyZaoxsFX8TQDQtQXVYk2gabygm7as4+f+0+py+FErkKIbz8m0r6A+UrmKYaD/fksj2DGRKn/7Ohv7EAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcwoBgsJBwgDAgkQmTQy2zEs+JUEFQgKAgMWAgEC\nGQECGwMCHgEAAOr4Af4sl2I7QkkJvdTSMPeUJNKtj45ArxBHmbLjpYuVTpnM\nLr2DJmlNFiYgZlZkExYEI5Gm3CxyHJeq/elBSe5V613Ozk0EWxXMKAEB/3LI\nfXPVHtBtHKVE+Zveb29bmDK/l6t0w+UYIw0qpJekjaFrrLtHm5ML9BwJCBei\nea1VCL/SGTf478lZZ7My+K0AEQEAAcJfBBgBCAATBQJbFcwoCRCZNDLbMSz4\nlQIbDAAA7U8B/iloThYXFYC7IU45OqWcr5uT72ZlSaUmxKcktcjA9DRH4GVg\nZysmi4/kjUvb+qoA9GIoc7MfXxw32zkNL8YjW9c=",
+            "xk0EWxXLXgEB/1ZDEin4DMhsR9XN3PzYqVbyf7YsOXoF1E5ZEn2jTrh9e6kU8+zLfiaysPc4PntHAzDHWB2DjJv8+if8nTvTyGEAEQEAAc0NPGluZm9AYnRs\nLmNvPsJ1BBABCAApBQJbFcteBgsJBwgDAgkQeEalLevEq6kEFQgKAgMWAgEC\nGQECGwMCHgEAAI60Af9FavirDL2L6pl6iywR9RV1qLrEgEtN/eMOKVj+3Tzt\n00dE12onmnWw2rcl1Amc0ZmM87vwGWYxoiRBt8tqqEbfzk0EWxXLXgECAMO+\nizeYvgWINZAtqSbn6k55j8xN9b7hVBmCrIr0PBUmg//rFCqYuelAGuEbkW+K\nv/pQki59N2lU9xucR9MhxSsAEQEAAcJfBBgBCAATBQJbFcteCRB4RqUt68Sr\nqQIbDAAAq9cB/Ax+0dq+pQN8lnkpqvQQKzUxHaiNsPbinU1XqcA51V/sGCiv\nuuOMrvm+y6jSf10lDNP7u/rGQRwSjTQ77rn5b5Q="
+          ],
+          "covenant": "template-control",
+          "covenants": {
+            "templateControl": "template-control"
+          },
+          "joins": {
+            "provide": [
+              {
+                "alias": "templatePublic",
+                "path": [
+                  "interbitServices",
+                  "shared"
+                ],
+                "joinName": "INTERBIT_SERVICES"
+              },
+              {
+                "alias": "templatePublic",
+                "path": [
+                  "privateChainHosting",
+                  "shared"
+                ],
+                "joinName": "HOSTING_SPONSOR"
+              }
+            ],
+            "consume": [],
+            "receiveActionFrom": [
+              {
+                "alias": "interbitRoot",
+                "authorizedActions": [
+                  "@@MANIFEST/SET_MANIFEST"
+                ]
+              }
+            ],
+            "sendActionTo": []
+          },
+          "chains": {},
+          "hash": "c9e8fb04cff4c84c4a812cd37f0740a02d1b222b"
+        }
+      },
+      "hash": "3a07f848866473bbdfb4684ca0276d3c51471818"
+    }
+  },
+  "hash": "89bf5072b5dc631b49510d3803d40cf44651cfc8"
+}

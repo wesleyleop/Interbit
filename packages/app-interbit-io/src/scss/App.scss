@@ -1,0 +1,199 @@
+@import '_variables';
+
+.ibweb.app-interbit-io {
+  .ibweb-page {
+    &.home .header,
+    &.ib-for-business .header,
+    &.platform .header {
+      margin-top: -64px;
+    }
+
+    &.policy {
+      margin-top: 96px;
+
+      @media (max-width: $screen-lg-min - 1) {
+        margin-top: 64px;
+      }
+
+      @media (max-width: $screen-sm-min - 1) {
+        margin-top: 0;
+      }
+    }
+
+    // Platform page
+    &.platform {
+      .logos {
+        h4 {
+          margin-bottom: 32px;
+        }
+
+        .logo {
+          margin-bottom: 16px;
+        }
+      }
+
+      .app-section {
+        .ibweb-intro {
+          margin-bottom: 16px;
+        }
+
+        .links {
+          margin-bottom: 32px;
+
+          a:after {
+            display: inline-block;
+            margin-left: 8px;
+            font-family: FontAwesome;
+            content: '\f105';
+          }
+        }
+
+        .ibweb-card {
+          height: 230px;
+        }
+      }
+    }
+
+    // Interbit For Business page
+    &.ib-for-business {
+      .logos img {
+        margin-bottom: 16px;
+      }
+
+      .logo-third {
+        display: inline-block;
+        width: calc(33% - 16px);
+        margin-right: 16px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        img {
+          margin-left: 0;
+        }
+      }
+    }
+
+    // Dev Overview page
+    &.dev-overview {
+      .app-characteristics {
+        & > div {
+          margin-bottom: 16px;
+        }
+
+        p {
+          min-height: 46px;
+        }
+      }
+
+      .common-services {
+        h2 {
+          margin-bottom: 32px;
+        }
+
+        .ibweb-content-bar {
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+
+    // Dev Platform Features page
+    &.dev-platform-features {
+      .sections {
+        .row:last-child {
+          margin-bottom: 64px;
+        }
+        .subtitle {
+          font-size: 22px;
+          font-weight: 600;
+        }
+
+        ol {
+          list-style-type: decimal;
+          margin-top: 16px;
+          margin-left: 32px;
+
+          li {
+            margin-bottom: 12px;
+            font-size: 22px;
+            color: #666;
+          }
+        }
+      }
+
+      @media (max-width: $screen-sm-min - 1) {
+        .sections {
+          ol li {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    // Dev Resources page
+    &.dev-resources {
+      .sections {
+        .row:last-child {
+          margin-bottom: 64px;
+        }
+
+        .ibweb-intro {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    // Dev Chain Architecture page
+    &.dev-architecture {
+      .sections {
+        .ibweb-intro {
+          margin-bottom: 16px;
+        }
+
+        .example {
+          margin-bottom: 32px;
+        }
+      }
+    }
+
+    // Dev Support page
+    &.dev-support {
+      .sections {
+        .row:last-child {
+          margin-bottom: 64px;
+        }
+      }
+    }
+
+    // Policy pages
+    &.policy {
+      .policy-content {
+        ol {
+          margin: 32px 0 8px 32px;
+          list-style-type: decimal;
+          font-size: 22px;
+          color: #666;
+
+          li {
+            margin-bottom: 32px;
+          }
+        }
+
+        ul {
+          margin: 8px 0 8px 32px;
+          list-style-type: disc;
+          font-size: 22px;
+          color: #666;
+        }
+
+        .subsection {
+          margin-left: 64px;
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.ibweb.app-interbit-io .ibweb-page.home .header, .ibweb.app-interbit-io .ibweb-page.ib-for-business .header, .ibweb.app-interbit-io .ibweb-page.platform .header {
+  margin-top: -64px; }
+.ibweb.app-interbit-io .ibweb-page.policy {
+  margin-top: 96px; }
+  @media (max-width: 1023px) {
+    .ibweb.app-interbit-io .ibweb-page.policy {
+      margin-top: 64px; } }
+  @media (max-width: 629px) {
+    .ibweb.app-interbit-io .ibweb-page.policy {
+      margin-top: 0; } }
+.ibweb.app-interbit-io .ibweb-page.platform .logos h4 {
+  margin-bottom: 32px; }
+.ibweb.app-interbit-io .ibweb-page.platform .logos .logo {
+  margin-bottom: 16px; }
+.ibweb.app-interbit-io .ibweb-page.platform .app-section .ibweb-intro {
+  margin-bottom: 16px; }
+.ibweb.app-interbit-io .ibweb-page.platform .app-section .links {
+  margin-bottom: 32px; }
+  .ibweb.app-interbit-io .ibweb-page.platform .app-section .links a:after {
+    display: inline-block;
+    margin-left: 8px;
+    font-family: FontAwesome;
+    content: '\f105'; }
+.ibweb.app-interbit-io .ibweb-page.platform .app-section .ibweb-card {
+  height: 230px; }
+.ibweb.app-interbit-io .ibweb-page.ib-for-business .logos img {
+  margin-bottom: 16px; }
+.ibweb.app-interbit-io .ibweb-page.ib-for-business .logo-third {
+  display: inline-block;
+  width: calc(33% - 16px);
+  margin-right: 16px; }
+  .ibweb.app-interbit-io .ibweb-page.ib-for-business .logo-third:last-child {
+    margin-right: 0; }
+  .ibweb.app-interbit-io .ibweb-page.ib-for-business .logo-third img {
+    margin-left: 0; }
+.ibweb.app-interbit-io .ibweb-page.dev-overview .app-characteristics > div {
+  margin-bottom: 16px; }
+.ibweb.app-interbit-io .ibweb-page.dev-overview .app-characteristics p {
+  min-height: 46px; }
+.ibweb.app-interbit-io .ibweb-page.dev-overview .common-services h2 {
+  margin-bottom: 32px; }
+.ibweb.app-interbit-io .ibweb-page.dev-overview .common-services .ibweb-content-bar a {
+  display: block; }
+.ibweb.app-interbit-io .ibweb-page.dev-platform-features .sections .row:last-child {
+  margin-bottom: 64px; }
+.ibweb.app-interbit-io .ibweb-page.dev-platform-features .sections .subtitle {
+  font-size: 22px;
+  font-weight: 600; }
+.ibweb.app-interbit-io .ibweb-page.dev-platform-features .sections ol {
+  list-style-type: decimal;
+  margin-top: 16px;
+  margin-left: 32px; }
+  .ibweb.app-interbit-io .ibweb-page.dev-platform-features .sections ol li {
+    margin-bottom: 12px;
+    font-size: 22px;
+    color: #666; }
+@media (max-width: 629px) {
+  .ibweb.app-interbit-io .ibweb-page.dev-platform-features .sections ol li {
+    font-size: 16px; } }
+.ibweb.app-interbit-io .ibweb-page.dev-resources .sections .row:last-child {
+  margin-bottom: 64px; }
+.ibweb.app-interbit-io .ibweb-page.dev-resources .sections .ibweb-intro {
+  margin-bottom: 16px; }
+.ibweb.app-interbit-io .ibweb-page.dev-architecture .sections .ibweb-intro {
+  margin-bottom: 16px; }
+.ibweb.app-interbit-io .ibweb-page.dev-architecture .sections .example {
+  margin-bottom: 32px; }
+.ibweb.app-interbit-io .ibweb-page.dev-support .sections .row:last-child {
+  margin-bottom: 64px; }
+.ibweb.app-interbit-io .ibweb-page.policy .policy-content ol {
+  margin: 32px 0 8px 32px;
+  list-style-type: decimal;
+  font-size: 22px;
+  color: #666; }
+  .ibweb.app-interbit-io .ibweb-page.policy .policy-content ol li {
+    margin-bottom: 32px; }
+.ibweb.app-interbit-io .ibweb-page.policy .policy-content ul {
+  margin: 8px 0 8px 32px;
+  list-style-type: disc;
+  font-size: 22px;
+  color: #666; }
+.ibweb.app-interbit-io .ibweb-page.policy .policy-content .subsection {
+  margin-left: 64px; }
+
+/*# sourceMappingURL=App.css.map */

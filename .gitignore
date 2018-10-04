@@ -1,0 +1,50 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+
+# dependencies
+node_modules
+dist
+packages/platform-deploy/platform/covenants
+lerna-debug.log
+npm-debug.log
+_book
+
+# testing
+/coverage
+**/coverage-total
+.nyc_output
+
+# production
+**/build
+**/.sass-cache
+
+# misc
+**/~*
+**/.idea
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+secrets.sh
+secrets
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+packages/app-app-store-test/backend/interbit
+packages/app-app-store-test/backend/*.log
+
+/**/db-*
+
+webpack-assets.json
+webpack-stats.json
+.happypack
+webpack/dlls/*.json
+*.report.html
+coverage
+
+package-lock.json
+yarn.lock
+
+docs/gitbook
